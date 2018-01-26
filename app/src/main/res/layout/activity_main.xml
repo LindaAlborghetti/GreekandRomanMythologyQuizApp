@@ -1,0 +1,438 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/scrollView"
+    android:background="@drawable/light_blue_background">
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="How much do you know"
+            android:layout_gravity="center_horizontal"
+            android:textSize="30sp"
+            android:layout_marginTop="28dp"
+            android:textColor="#000099"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="about mythology?"
+            android:layout_gravity="center_horizontal"
+            android:textSize="30sp"
+            android:textColor="#000099"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Find out with the Quiz below!"
+            android:layout_gravity="center_horizontal"
+            android:textSize="23sp"
+            android:layout_marginTop="15dp"
+            android:textColor="#000099"
+            android:textStyle="italic"
+            android:fontFamily="sans-serif"/>
+
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Enter Your Name"
+            android:inputType="textCapWords"
+            android:id="@+id/edit_text_view"
+            android:textSize="20sp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:src="@drawable/egina_background"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="25dp"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="19dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:textSize="19sp"
+        android:layout_gravity="center"
+        android:textColor="#000099"
+        android:fontFamily="sans-serif"
+        android:textStyle="bold"
+        android:text="The Trojan War took place in 13th century B.C.E. and it was told by the poet Homer in which of his work:"/>
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/RGroup1"
+        android:orientation="vertical"
+        android:layout_gravity="center">
+
+
+    <RadioButton
+        android:layout_width="110dp"
+        android:layout_height="30dp"
+        android:text="Odyssey"
+        android:textSize="18sp"
+        android:textColor="#000099"
+        android:id="@+id/odyssey_radiobutton"/>
+
+
+    <RadioButton
+        android:layout_width="110dp"
+        android:layout_height="30dp"
+        android:text="Iliad"
+        android:textSize="18sp"
+        android:textColor="#000099"
+        android:id="@+id/iliad_radiobutton" />
+
+    <RadioButton
+        android:layout_width="110dp"
+        android:layout_height="30dp"
+        android:text="Aeneid"
+        android:textSize="18sp"
+        android:textColor="#000099"
+        android:id="@+id/aeneid_radiobutton"/>
+
+    <RadioButton
+        android:layout_width="110dp"
+        android:layout_height="30dp"
+        android:text="Oresteia"
+        android:textSize="18sp"
+        android:textColor="#000099"
+        android:id="@+id/oresteia_radiobutton"/>
+
+    </RadioGroup>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="19sp"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="19dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:textColor="#000099"
+        android:fontFamily="sans-serif"
+        android:textStyle="bold"
+        android:text="In the Odyssey, Ulysses meet different creatures, which one of these are the most famous?"/>
+
+
+    <CheckBox
+        android:layout_width="110dp"
+        android:layout_height="30dp"
+        android:text="Cyclops"
+        android:textSize="18sp"
+        android:id="@+id/cyclops_checkbox"
+        android:onClick="showResult"
+        android:textColor="#000099"
+        android:layout_gravity="center_horizontal"/>
+
+        <CheckBox
+            android:id="@+id/circe_checkbox"
+            android:layout_width="110dp"
+            android:layout_height="30dp"
+            android:textSize="18sp"
+            android:textColor="#000099"
+            android:layout_gravity="center_horizontal"
+            android:text="Circe" />
+
+    <CheckBox
+        android:layout_width="110dp"
+        android:layout_height="30dp"
+        android:textSize="18sp"
+        android:text="Minotaur"
+        android:id="@+id/minotaur_checkbox"
+        android:textColor="#000099"
+        android:layout_gravity="center_horizontal"/>
+
+    <CheckBox
+        android:layout_width="110dp"
+        android:layout_height="30dp"
+        android:textSize="18sp"
+        android:text="Sirens"
+        android:textColor="#000099"
+        android:id="@+id/sirens_checkbox"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="19dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="19dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:textColor="#000099"
+        android:fontFamily="sans-serif"
+        android:textStyle="bold"
+        android:text="Greeks and Romans worshipped many Gods but they had diffent names for them. Select only the greek names."/>
+
+    <CheckBox
+        android:layout_width="110dp"
+        android:layout_height="30dp"
+        android:text="Apollo"
+        android:id="@+id/apollo_checkbox"
+        android:textColor="#000099"
+        android:textSize="18sp"
+        android:layout_gravity="center_horizontal"/>
+
+    <CheckBox
+        android:layout_width="110dp"
+        android:layout_height="30dp"
+        android:text="Jupiter"
+        android:id="@+id/jupiter_checkbox"
+        android:textColor="#000099"
+        android:textSize="18sp"
+        android:layout_gravity="center_horizontal"/>
+
+    <CheckBox
+        android:layout_width="110dp"
+        android:layout_height="30dp"
+        android:text="Demeter"
+        android:id="@+id/demeter_checkbox"
+        android:textColor="#000099"
+        android:textSize="18sp"
+        android:layout_gravity="center_horizontal"/>
+
+     <CheckBox
+         android:layout_width="110dp"
+         android:layout_height="30dp"
+         android:text="Venus"
+         android:textColor="#000099"
+         android:textSize="18sp"
+         android:id="@+id/venus_checkbox"
+         android:layout_gravity="center_horizontal"/>
+
+      <CheckBox
+          android:layout_width="110dp"
+          android:layout_height="30dp"
+          android:text="Poseidon"
+          android:textColor="#000099"
+          android:textSize="18sp"
+          android:id="@+id/poseidon_checkbox"
+          android:layout_gravity="center_horizontal"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="19dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="19dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:textColor="#000099"
+        android:fontFamily="sans-serif"
+        android:textStyle="bold"
+        android:text="Secret rites that took place during the night, where it was possible to transgress the rules and violate social norms were dedicated to which God?"/>
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/RGroup2"
+            android:orientation="vertical"
+            android:layout_gravity="center">
+
+        <RadioButton
+            android:layout_width="110dp"
+            android:layout_height="30dp"
+            android:text="Zeus"
+            android:textColor="#000099"
+            android:textSize="18sp"
+            android:id="@+id/zeus_radiobutton"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="Dionysus, also known as Bacchus"
+            android:textColor="#000099"
+            android:textSize="18sp"
+            android:id="@+id/dionysus_radiobutton"/>
+
+        <RadioButton
+            android:layout_width="110dp"
+            android:layout_height="30dp"
+            android:text="Ermes"
+            android:textColor="#000099"
+            android:textSize="18sp"
+            android:id="@+id/ermes_radiobutton"/>
+
+        <RadioButton
+            android:layout_width="110dp"
+            android:layout_height="30dp"
+            android:text="Hades"
+            android:textColor="#000099"
+            android:textSize="18sp"
+            android:id="@+id/hades_radiobutton"/>
+
+        </RadioGroup>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="19dp"
+        android:layout_margin="20dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="19dp"
+        android:textColor="#000099"
+        android:fontFamily="sans-serif"
+        android:textStyle="bold"
+        android:text="What was the only weakness of the hero Achilles?"/>
+
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/RGroup3"
+            android:orientation="vertical"
+            android:layout_gravity="center">
+
+        <RadioButton
+            android:layout_width="110dp"
+            android:layout_height="30dp"
+            android:text="Knee"
+            android:textColor="#000099"
+            android:textSize="18sp"
+            android:id="@+id/knee_radiobutton"/>
+
+        <RadioButton
+            android:layout_width="110dp"
+            android:layout_height="30dp"
+            android:text="Foot"
+            android:textColor="#000099"
+            android:textSize="18sp"
+            android:id="@+id/foot_radiobutton"/>
+
+        <RadioButton
+            android:layout_width="110dp"
+            android:layout_height="30sp"
+            android:text="Hand"
+            android:textColor="#000099"
+            android:textSize="18sp"
+            android:id="@+id/hand_radiobutton"/>
+
+        <RadioButton
+            android:layout_width="110dp"
+            android:layout_height="30dp"
+            android:text="Heel"
+            android:textColor="#000099"
+            android:textSize="18sp"
+            android:id="@+id/heel_radiobutton"/>
+
+        </RadioGroup>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="19dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="19dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:textColor="#000099"
+        android:fontFamily="sans-serif"
+        android:textStyle="bold"
+        android:text="Which is the plot of the story told in the Aeneid written by the poet Virgil?"/>
+
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/RGroup4"
+            android:orientation="vertical"
+            android:layout_gravity="center">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="a hero's journey to his home"
+            android:textColor="#000099"
+            android:textSize="18sp"
+            android:id="@+id/hero_radiobutton"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="a long and violent war"
+            android:textColor="#000099"
+            android:textSize="18sp"
+            android:id="@+id/war_radiobutton"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="the history of Rome's origin"
+            android:textColor="#000099"
+            android:textSize="18sp"
+            android:id="@+id/rome_radiobutton"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="the Gods' life on the Olympus"
+            android:textColor="#000099"
+            android:textSize="18sp"
+            android:id="@+id/gods_radiobutton"/>
+
+        </RadioGroup>
+
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="QUIZ RESULT"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:background="@color/colorPrimary"
+            android:textColor="@android:color/white"
+            android:onClick="showResult"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Score"
+            android:textColor="#000099"
+            android:layout_gravity="center_horizontal"
+            android:textSize="27dp"
+            android:fontFamily="sans-serif"
+            android:layout_marginTop="20dp"
+            android:id="@+id/summary_score"/>
+
+
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="TAKE QUIZ AGAIN"
+            android:onClick="resetScore"
+            android:id="@+id/resetScore"
+            android:textColor="@android:color/white"
+            android:background="@color/colorPrimary"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"/>
+
+</LinearLayout>
+
+</ScrollView>
+
+
